@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="cafe_house">Cafe House</string>
+    <string name="already_registerd">Already Registerd</string>
+    <string name="todo">TODO</string>
+    <string name="button">Button</string>
+    <string name="butto">Button</string>
+</resources>
