@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignIn_Activity"
-    android:orientation="vertical">
+
+
+    android:orientation="vertical"
+    tools:context=".SignIn_Activity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F6F6F6">
+            android:background="#AEF6F6F6">
 
 
             <LinearLayout
@@ -29,29 +33,25 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="0dp"
-
-                    android:contentDescription="@string/todo"
-                    android:padding="8dp"
-                    app:srcCompat="@drawable/logo" />
+                    android:layout_height="216dp"
+                    app:srcCompat="@drawable/espensologo" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="0dp"
-                    android:fontFamily="cursive"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
                     android:padding="8dp"
                     android:text="@string/cafe_house"
                     android:textColor="#101010"
                     android:textColorHint="#ECEAEA"
                     android:textSize="60sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="EXPENSO" />
 
 
                 <EditText
@@ -64,7 +64,9 @@
                     android:gravity="center"
                     android:hint="foodapp07@gmail.com"
                     android:inputType="textEmailAddress"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColorHint="#100F0F"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextTextPassword"
@@ -77,6 +79,7 @@
                     android:hint="********"
                     android:inputType="textPassword"
                     android:padding="10dp"
+                    android:textColorHint="#1C1B1B"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -90,7 +93,8 @@
                     android:text="Sign In"
                     android:textColor="#0B0A0A"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -165,14 +169,13 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/btnlogup"
+                    android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Already have Account?Login"
-                    android:textColor="#FC121010"
-                    android:textSize="16sp"
+                    android:textColor="#100F0F"
                     android:textStyle="bold|italic" />
 
             </LinearLayout>

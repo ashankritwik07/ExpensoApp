@@ -2,22 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDECEC"
-    android:orientation="vertical"
+
     tools:context=".SignUp_Acitivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         android:orientation="vertical">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#A3FFFFFF"
+            >
 
 
             <LinearLayout
@@ -35,7 +35,7 @@
                     android:layout_height="96dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/avatar"
+                    android:src="@drawable/avatar2"
                     app:civ_border_color="#FF000000"
                     app:civ_border_width="2dp" />
 
@@ -66,9 +66,12 @@
                     android:background="@drawable/backgroundeditview"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="User Name"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:text="User Name" />
+                    android:textColor="#0C0C0C"
+                    android:textColorHint="#090707"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextPhone"
@@ -80,7 +83,9 @@
                     android:gravity="center"
                     android:hint="+91 7979147332"
                     android:inputType="phone"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColorHint="#121010"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextTextEmailAddress"
@@ -92,7 +97,9 @@
                     android:gravity="center"
                     android:hint="foodapp07@gmail.com"
                     android:inputType="textEmailAddress"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColorHint="#090808"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextTextPassword"
@@ -105,11 +112,12 @@
                     android:hint="********"
                     android:inputType="textPassword"
                     android:padding="10dp"
+                    android:textColorHint="#0E0D0D"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btnsignin"
+                    android:id="@+id/btnregister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"

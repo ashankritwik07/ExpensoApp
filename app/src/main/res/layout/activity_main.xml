@@ -4,11 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/background"
+    android:backgroundTint="#E7E8EA"
+
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="364dp"
+
+
         android:layout_height="684dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
@@ -22,24 +26,25 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             android:contentDescription="@string/todo"
             android:padding="8dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/poor" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:fontFamily="cursive"
+            android:fontFamily="serif"
             android:gravity="center"
             android:padding="8dp"
             android:text="@string/cafe_house"
-            android:textColor="#101010"
+            android:textColor="#041A91"
             android:textColorHint="#ECEAEA"
             android:textSize="60sp"
             android:textStyle="bold" />
@@ -50,6 +55,7 @@
             android:layout_height="48dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/btn_gradient"
+
             android:padding="8dp"
             android:text="login"
             android:textStyle="bold|italic"
